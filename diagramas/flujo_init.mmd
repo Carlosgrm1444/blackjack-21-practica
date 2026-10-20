@@ -1,0 +1,30 @@
+flowchart TD
+    A([Inicio de init]) --> B[Crear juego y mostrar bienvenida]
+    B --> C[seguir_jugando = True]
+    C --> D{¿Quiere seguir Y puede apostar?}
+    D -- No --> Z[Mostrar despedida]
+    Z --> FIN([Fin de init])
+    D -- Sí --> E[Preparar ronda, mostrar mesa y ofrecer seguro]
+    E --> F{¿Hay blackjack inicial?}
+    F -- Sí --> G[Revelar crupier, pausar y omitir ambos turnos]
+    G --> P[Liquidar ronda UNA vez]
+    F -- No --> H{¿Hay turno del jugador?}
+    H -- Sí --> I[Preguntar una acción]
+    I --> J[Aplicar acción; si sigue el turno, mostrar la mesa actualizada]
+    J --> H
+    H -- No --> K[Revelar crupier y pausar]
+    K --> L{¿Debe pedir el crupier?}
+    L -- Sí --> M[Dar UNA carta al crupier, mostrar mesa y pausar]
+    M --> L
+    L -- No --> P
+    P --> Q{¿Puede apostar otra vez?}
+    Q -- Sí --> R[Preguntar otra ronda y guardar respuesta en seguir_jugando]
+    R --> D
+    Q -- No --> D
+
+    classDef pregunta fill:#e0f2fe,stroke:#0369a1,color:#0f172a
+    classDef accion fill:#f0fdf4,stroke:#15803d,color:#0f172a
+    classDef limite fill:#f1f5f9,stroke:#475569,color:#0f172a
+    class D,F,H,L,Q pregunta
+    class B,C,E,G,I,J,K,M,P,R,Z accion
+    class A,FIN limite

@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="2450" viewBox="0 0 1200 2450" role="img" aria-labelledby="titulo descripcion">
+<title id="titulo">Blackjack 21: flujo de init con tres bucles while</title>
+<desc id="descripcion">El ciclo principal repite rondas mientras haya saldo y se desee continuar. El blackjack inicial omite los turnos. El jugador repite acciones hasta terminar sus manos; después el crupier pide hasta 17. Se liquida una vez por ronda y se guarda la decisión de continuar.</desc>
+<defs><marker id="flecha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#475569"/></marker></defs>
+<rect width="1200" height="2450" fill="#ffffff"/>
+<text x="600" y="36.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, sans-serif" font-size="29" fill="#0f172a" font-weight="700">BLACKJACK 21 · FLUJO DE init()</text>
+<text x="600" y="72.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, sans-serif" font-size="17" fill="#475569" font-weight="400">Rombos = condiciones · Rectángulos = llamadas · Regresos = otra vuelta</text>
+<path d="M 480,148 L 480,180" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#flecha)"/>
+<path d="M 480,270 L 480,312" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#flecha)"/>
+<path d="M 480,378 L 480,420" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#flecha)"/>
+<path d="M 720,490 L 800,490" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#flecha)"/>
+<rect x="737" y="454" width="40" height="30" rx="6" fill="white"/>
+<text x="757" y="469.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#0369a1" font-weight="700">No</text>
+<path d="M 960,535 L 960,600" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#flecha)"/>
+<path d="M 480,560 L 480,605" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#flecha)"/>
+<rect x="493" y="566" width="40" height="30" rx="6" fill="white"/>
+<text x="513" y="581.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#0369a1" font-weight="700">Sí</text>
+<path d="M 480,715 L 480,785" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#flecha)"/>
+<path d="M 695,850 L 790,850" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#flecha)"/>
+<rect x="723" y="814" width="40" height="30" rx="6" fill="white"/>
+<text x="743" y="829.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#0369a1" font-weight="700">Sí</text>
+<path d="M 965,905 L 965,948 L 1140,948 L 1140,1945 L 780,1945 L 780,1980 L 750,1980" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#flecha)"/>
+<path d="M 480,915 L 480,975" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#flecha)"/>
+<rect x="493" y="931" width="40" height="30" rx="6" fill="white"/>
+<text x="513" y="946.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#0369a1" font-weight="700">No</text>
+<path d="M 480,1105 L 480,1165" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#flecha)"/>
+<rect x="493" y="1119" width="40" height="30" rx="6" fill="white"/>
+<text x="513" y="1134.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#0369a1" font-weight="700">Sí</text>
+<path d="M 480,1255 L 480,1295" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#flecha)"/>
+<path d="M 230,1340 L 150,1340 L 150,1040 L 285,1040" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#flecha)"/>
+<path d="M 675,1040 L 770,1040 L 770,1490 L 730,1490" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#flecha)"/>
+<rect x="704" y="1004" width="40" height="30" rx="6" fill="white"/>
+<text x="724" y="1019.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#0369a1" font-weight="700">No</text>
+<path d="M 480,1530 L 480,1580" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#flecha)"/>
+<path d="M 480,1700 L 480,1765" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#flecha)"/>
+<rect x="493" y="1717" width="40" height="30" rx="6" fill="white"/>
+<text x="513" y="1732.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#0369a1" font-weight="700">Sí</text>
+<path d="M 230,1810 L 190,1810 L 190,1640 L 280,1640" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#flecha)"/>
+<path d="M 680,1640 L 810,1640 L 810,1980 L 750,1980" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#flecha)"/>
+<rect x="702" y="1604" width="40" height="30" rx="6" fill="white"/>
+<text x="722" y="1619.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#0369a1" font-weight="700">No</text>
+<path d="M 480,2025 L 480,2095" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#flecha)"/>
+<path d="M 680,2160 L 800,2160" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#flecha)"/>
+<rect x="718" y="2124" width="40" height="30" rx="6" fill="white"/>
+<text x="738" y="2139.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#0369a1" font-weight="700">Sí</text>
+<path d="M 280,2160 L 80,2160 L 80,490 L 240,490" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#flecha)"/>
+<rect x="228" y="2124" width="40" height="30" rx="6" fill="white"/>
+<text x="248" y="2139.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#0369a1" font-weight="700">No</text>
+<path d="M 970,2225 L 970,2290 L 80,2290 L 80,2160" fill="none" stroke="#475569" stroke-width="2.5" marker-end="url(#flecha)"/>
+<rect x="370.0" y="92.0" width="220" height="56" rx="28.0" fill="#f1f5f9" stroke="#475569" stroke-width="2"/>
+<text x="480" y="120.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, sans-serif" font-size="20" fill="#0f172a" font-weight="700">Inicio de init</text>
+<rect x="200.0" y="180.0" width="560" height="90" rx="12" fill="#f0fdf4" stroke="#15803d" stroke-width="2"/>
+<text x="480" y="210.5" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans Mono, monospace" font-size="20" fill="#0f172a" font-weight="400">juego = crear_juego()</text>
+<text x="480" y="239.5" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans Mono, monospace" font-size="20" fill="#0f172a" font-weight="400">mostrar_bienvenida(juego)</text>
+<rect x="270.0" y="312.0" width="420" height="66" rx="12" fill="#f0fdf4" stroke="#15803d" stroke-width="2"/>
+<text x="480" y="345.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans Mono, monospace" font-size="20" fill="#0f172a" font-weight="400">seguir_jugando = True</text>
+<polygon points="480,420.0 720.0,490 480,560.0 240.0,490" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+<text x="480" y="476.5" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#0f172a" font-weight="400">¿Quiere seguir Y puede apostar?</text>
+<text x="480" y="503.5" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#0f172a" font-weight="400">Bandera y saldo suficiente</text>
+<rect x="800.0" y="445.0" width="320" height="90" rx="12" fill="#f0fdf4" stroke="#15803d" stroke-width="2"/>
+<text x="960" y="476.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans Mono, monospace" font-size="19" fill="#0f172a" font-weight="400">mostrar_despedida</text>
+<text x="960" y="504.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans Mono, monospace" font-size="19" fill="#0f172a" font-weight="400">(juego)</text>
+<rect x="850.0" y="600.0" width="220" height="60" rx="30.0" fill="#f1f5f9" stroke="#475569" stroke-width="2"/>
+<text x="960" y="630.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, sans-serif" font-size="20" fill="#0f172a" font-weight="700">Fin de init</text>
+<rect x="200.0" y="605.0" width="560" height="110" rx="12" fill="#f0fdf4" stroke="#15803d" stroke-width="2"/>
+<text x="480" y="631.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans Mono, monospace" font-size="20" fill="#0f172a" font-weight="400">preparar_ronda(juego)</text>
+<text x="480" y="660.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans Mono, monospace" font-size="20" fill="#0f172a" font-weight="400">mostrar_mesa(juego)</text>
+<text x="480" y="689.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans Mono, monospace" font-size="20" fill="#0f172a" font-weight="400">ofrecer_seguro(juego)</text>
+<polygon points="480,785.0 695.0,850 480,915.0 265.0,850" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+<text x="480" y="836.5" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#0f172a" font-weight="400">¿Hay blackjack inicial?</text>
+<text x="480" y="863.5" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#0f172a" font-weight="400">hay_blackjack_inicial(juego)</text>
+<rect x="790.0" y="795.0" width="350" height="110" rx="12" fill="#f0fdf4" stroke="#15803d" stroke-width="2"/>
+<text x="965" y="836.5" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#0f172a" font-weight="400">revelar_crupier(juego)</text>
+<text x="965" y="863.5" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans Mono, monospace" font-size="16" fill="#0f172a" font-weight="400">pausar_crupier(); omitir turnos</text>
+<polygon points="480,975.0 675.0,1040 480,1105.0 285.0,1040" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+<text x="480" y="1026.5" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#0f172a" font-weight="400">¿Queda turno del jugador?</text>
+<text x="480" y="1053.5" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#0f172a" font-weight="400">hay_turno_jugador(juego)</text>
+<rect x="230.0" y="1165.0" width="500" height="90" rx="12" fill="#f0fdf4" stroke="#15803d" stroke-width="2"/>
+<text x="480" y="1196.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans Mono, monospace" font-size="19" fill="#0f172a" font-weight="400">accion =</text>
+<text x="480" y="1224.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans Mono, monospace" font-size="19" fill="#0f172a" font-weight="400">preguntar_accion(juego)</text>
+<rect x="230.0" y="1295.0" width="500" height="90" rx="12" fill="#f0fdf4" stroke="#15803d" stroke-width="2"/>
+<text x="480" y="1326.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans Mono, monospace" font-size="19" fill="#0f172a" font-weight="400">aplicar_accion(juego, accion)</text>
+<text x="480" y="1354.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans Mono, monospace" font-size="17" fill="#0f172a" font-weight="400">Si sigue el turno: mostrar_mesa(juego)</text>
+<rect x="230.0" y="1450.0" width="500" height="80" rx="12" fill="#f0fdf4" stroke="#15803d" stroke-width="2"/>
+<text x="480" y="1490.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#0f172a" font-weight="400">revelar_crupier(); pausar_crupier()</text>
+<polygon points="480,1580.0 680.0,1640 480,1700.0 280.0,1640" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+<text x="480" y="1626.5" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#0f172a" font-weight="400">¿Debe pedir el crupier?</text>
+<text x="480" y="1653.5" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#0f172a" font-weight="400">debe_pedir_crupier(juego)</text>
+<rect x="230.0" y="1765.0" width="500" height="90" rx="12" fill="#f0fdf4" stroke="#15803d" stroke-width="2"/>
+<text x="480" y="1796.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans Mono, monospace" font-size="19" fill="#0f172a" font-weight="400">dar_carta_crupier(juego)</text>
+<text x="480" y="1824.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans Mono, monospace" font-size="17" fill="#0f172a" font-weight="400">mostrar_mesa(); pausar_crupier()</text>
+<rect x="210.0" y="1935.0" width="540" height="90" rx="12" fill="#f0fdf4" stroke="#15803d" stroke-width="2"/>
+<text x="480" y="1965.5" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans Mono, monospace" font-size="20" fill="#0f172a" font-weight="400">liquidar_ronda(juego)</text>
+<text x="480" y="1994.5" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans Mono, monospace" font-size="20" fill="#0f172a" font-weight="400">UNA vez por ronda</text>
+<polygon points="480,2095.0 680.0,2160 480,2225.0 280.0,2160" fill="#e0f2fe" stroke="#0369a1" stroke-width="2"/>
+<text x="480" y="2146.5" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#0f172a" font-weight="400">¿Alcanza para otra apuesta?</text>
+<text x="480" y="2173.5" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, sans-serif" font-size="18" fill="#0f172a" font-weight="400">puede_apostar(juego)</text>
+<rect x="800.0" y="2095.0" width="340" height="130" rx="12" fill="#f0fdf4" stroke="#15803d" stroke-width="2"/>
+<text x="970" y="2133.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#0f172a" font-weight="400">seguir_jugando =</text>
+<text x="970" y="2160.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#0f172a" font-weight="400">preguntar_otra_ronda()</text>
+<text x="970" y="2187.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans Mono, monospace" font-size="18" fill="#0f172a" font-weight="400">Guardar True o False</text>
+<text x="969" y="372.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, sans-serif" font-size="19" fill="#0369a1" font-weight="700">WHILE 1 · RONDAS</text>
+<text x="960" y="1130.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, sans-serif" font-size="19" fill="#0369a1" font-weight="700">WHILE 2 · JUGADOR</text>
+<text x="960" y="1150.5" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#475569" font-weight="400">Una acción por vuelta.</text>
+<text x="960" y="1175.5" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#475569" font-weight="400">Puede avanzar a otra mano.</text>
+<text x="971" y="1740.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, sans-serif" font-size="19" fill="#0369a1" font-weight="700">WHILE 3 · CRUPIER</text>
+<text x="971" y="1760.5" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#475569" font-weight="400">Una carta por vuelta.</text>
+<text x="971" y="1785.5" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, sans-serif" font-size="16" fill="#475569" font-weight="400">Se planta en 17, incluso suave.</text>
+<text x="600" y="2360.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, sans-serif" font-size="19" fill="#0f172a" font-weight="700">Los turnos van uno después del otro, dentro del ciclo de rondas.</text>
+<text x="600" y="2393.0" text-anchor="middle" dominant-baseline="middle" font-family="DejaVu Sans, sans-serif" font-size="17" fill="#475569" font-weight="400">La liquidación va después de los turnos; la despedida va fuera del ciclo principal.</text>
+</svg>

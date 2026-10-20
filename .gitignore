@@ -1,0 +1,6 @@
+# Material privado de revisión y solución
+material_docente/
+
+# Archivos generados por Python
+__pycache__/
+*.py[cod]
